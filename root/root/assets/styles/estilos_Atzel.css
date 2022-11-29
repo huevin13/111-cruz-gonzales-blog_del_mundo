@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: rgb(241, 218, 188)
+}
+
+article {
+    background-color: rgb(44, 43, 43);
+}
+
+.resaltado {
+    color: yellow;
+}
+
+nav>ul>li {}
+
+#titulo_del_blog {
+    text-align: center;
+    font-size: 3rem;
+}
