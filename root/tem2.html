@@ -12,7 +12,7 @@
 
     <body>
         <!--Inicia barra de navegación-->
-        <nav>
+        <nav class="barra">
             <ul>
                 <li>
                     <a class="resaltado" href="index.html" target="_blank">Principal</a>
@@ -67,7 +67,7 @@
                         </p>
                         <!--Inicia la ilustración del astículo-->
                         <figure class="ilustracion">
-                            <img src="Images2\5.webp" alt="5" height="600px" width="auto">
+                            <img src="Images2\5.webp" alt="5" height="600px" width="1000">
                             <figcaption>Arte</figcaption>
                         </figure>
                     </div>
@@ -225,7 +225,7 @@
                     </div>
                     <!--Inicia la ilustración del astículo-->
                     <figure class="ilustracion">
-                        <img src="Images2\8.jpg" alt="8" height="600px" width="auto">
+                        <img src="Images2\8.jpg" alt="8" height="600px" width="1000">
                         <figcaption>Materiales</figcaption>
                     </figure>
                     <!--Termina ilustración del artículo-->
@@ -357,7 +357,128 @@
                         <!-- fin bibliografía -->
                     </footer>
                 </article>
+
+                <!-- inicia entrada: Introducción a mi_tema -->
+                <article>
+                    <header>
+                        <hgroup>
+                            <!-- Título del artículo -->
+                            <h2> <img
+                                    src="data:image/png;base64,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"
+                                    alt="ícono de arte" height="35px" width="auto"> Arte y belleza de la creación.</h2>
+                            <!-- Fecha en la que se escribió el artículo -->
+                            <h4>13/03/2023</h4>
+                        </hgroup>
+                    </header>
+                    <!-- inicia contenido del artículo -->
+                    <div>
+                        <h3>Biblia</h3>
+                        <p>La Biblia empieza por la obra grandiosa de la creación, relatada con una descripción popular,
+                            nada científica, pero que resulta una página genial. Desde niños nos la sabemos de memoria.
+                        </p>
+
+                        <h3>La creación</h3>
+                        <p>A grandes rasgos podemos apreciar la creación, según el relato bíblico, de la hierba, los
+                            árboles, los animales, las aves, etc. hasta culminar con la creación del hombre a quien
+                            transmite Dios su mismo hálito de vida, lo crea a su imagen y semejanza.
+
+                            Luego vemos la caída de Adán y Eva en la que aparece el maligno como una serpiente que
+                            incita a Eva para que coma del fruto de aquel árbol prohibido.
+
+                            En la tercera escena el temor de Adán y Eva los ha hecho esconderse de Dios. Se culpan uno
+                            al otro; pero el Señor dicta sentencia y son expulsados del paraíso.
+
+                            La Comunidad Monjas Concepcionistas de Alcázar de San Juan trabaja en restauración de
+                            imágenes, restauración de muebles antiguos, pintura al óleo, iconos, esmaltes, cirios,
+                            encuadernación, huerta y arreglo de jardines.</p>
+
+                        <h3>Belleza</h3>
+                        <p>nos habla de la belleza de la creación de Dios muestra el orden y diseño tan complejo que no
+                            pudo haber sido formado por la explosión de una oportunidad de 14 billones de años.</p>
+
+                        <!-- inicia ilustración del artículo -->
+                        <figure class="ilustracion">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNkKM479xGEJNHEWFFD7o4x7ksCyLtTf5EzBZ58Ar9AqKBPebDbemWDBtLxRNMHpMMwx8&usqp=CAU"
+                                height="600px" width="auto">
+                            <figcaption>Dios crea a Eva.</figcaption>
+                        </figure>
+                        <!-- termina ilustración del artículo -->
+                    </div>
+                    <!-- Termina contenido del artículo -->
+                    <footer>
+                        <!-- Datos del autor -->
+                        <div>
+                            <span>Jose Lopez Tarzo</span> <a href="https://www.instagram.com/catholicnet/"
+                                target="_blank">@LopezTar en mi_red_social</a>
+                        </div>
+                        <!-- fin datos del autor -->
+                        <!-- bibliografía -->
+                        <blockquote>
+                            <p>Del blog en Catholic Life.</p>
+                        </blockquote>
+                        <!-- fin bibliografía -->
+                    </footer>
+                </article>
+                <!-- fin entrada: Introducción a mi_tema -->
+
             </main>
+
+            <!-- empieza barra lateral -->
+            <aside>
+                <h2>Microblogging</h2>
+                <!--  entrada de mircoblogging -->
+                <div>
+                    <!-- ilustración -->
+                    <img src="https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png" alt="autor"
+                        width="60px" height="auto">
+                    <span>Para mí el arte es ver más allá de un objeto, es representarlo de una forma única cargada con
+                        el sentir de artista.</span>
+                </div>
+                <!-- termina entrada de mircoblogging -->
+                <!--  entrada de mircoblogging -->
+                <div>
+                    <!-- ilustración -->
+                    <img src="https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png" alt="autor"
+                        width="60px" height="auto">
+                    <span>Pero uno puede sentir una obra y al sentirla es posible encontrar sentidos y mundos que se
+                        salen de lo común.</span>
+                </div>
+                <!-- termina entrada de mircoblogging -->
+                <!--  entrada de mircoblogging -->
+                <div>
+                    <!-- ilustración -->
+                    <img src="https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png" alt="autor"
+                        width="60px" height="auto">
+                    <span>El arte es una actividad humana consciente capaz de reproducir cosas, construir formas, o
+                        expresar una experiencia, si el producto de esta reproducción, construcción, o expresión puede
+                        deleitar, emocionar o producir un choque.</span>
+                </div>
+                <!-- termina entrada de mircoblogging -->
+
+                <!--  entrada de mircoblogging -->
+                <div>
+                    <!-- ilustración -->
+                    <img src="https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png" alt="autor"
+                        width="60px" height="auto">
+                    <span>El arte fomenta las reacciones emocionales en las personas que disfrutan de él. Del mismo modo
+                        también favorece el desarrollo de la imaginación y en relación a esto, la capacidad de reflexión
+                        y de comunicación, así como la creatividad.</span>
+                </div>
+                <!-- termina entrada de mircoblogging -->
+
+                <!--  entrada de mircoblogging -->
+                <div>
+                    <!-- ilustración -->
+                    <img src="https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png" alt="autor"
+                        width="60px" height="auto">
+                    <span>Muy bonito que es el arte cuando basa sus emociones y toma la inspiración de la creación de
+                        Dios, porque recordemos que el verdadero arte no es más que el vivo retrato de la belleza en la
+                        naturaleza, ósea la creación.</span>
+                </div>
+                <!-- termina entrada de mircoblogging -->
+
+            </aside>
+            <!-- termina barra lateral -->
             <footer class="footer_blog">
                 <div>
                     <spam>Dali</spam><a href="https://www.instagram.com/dali.con.d.de.dadaismo/"
