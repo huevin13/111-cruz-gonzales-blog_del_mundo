@@ -121,6 +121,8 @@ li:hover {
     font-size: 3rem;
     text-decoration: none;
     color: rgb(245, 245, 245);
+    padding: 1em;
+    font-size: clamp(2 rem, 1%, +2 rem, 7 rem);
 }
 
 * {
@@ -128,7 +130,7 @@ li:hover {
 }
 
 .footer_blog {
-    border: solid 2rem white;
+    /* border: solid 2rem white; */
     display: flex;
     justify-content: space-between;
     align-items: center;
